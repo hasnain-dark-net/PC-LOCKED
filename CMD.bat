@@ -1,9 +1,9 @@
 @echo off
-title Lock Script Starter
 
-echo Checking & installing required modules...
-python -m pip install --quiet pyautogui keyboard pillow opencv-python
+REM Install required packages first
+python -m pip install pyautogui keyboard pillow opencv-python
 
-echo Starting script...
+REM Run script in background (CMD hidden)
 start "" /B pythonw lock.py
+
 exit
