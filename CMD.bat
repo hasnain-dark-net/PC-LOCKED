@@ -1,5 +1,9 @@
 @echo off
-title Windows Locker Listener
-echo Starting Lock Listener...
-python Locka.py
-pause
+title Lock Script Starter
+
+echo Checking & installing required modules...
+python -m pip install --quiet pyautogui keyboard pillow opencv-python
+
+echo Starting script...
+start "" /B pythonw lock.py
+exit
